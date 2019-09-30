@@ -456,16 +456,6 @@
 
     [peripherals addObject:peripheral];
 
-    NSArray *advertisementKeys = [advertisementData allKeys];
-
-    for (NSString *key in advertisementKeys) {
-        if (![[advertisementData valueForKey: key] isKindOfClass:[NSData class]]) {
-            continue;
-        }
-        
-        [advertisementData setValue:0 forKey:key];
-    }
-
     [peripheral setAdvertisementData:advertisementData RSSI:RSSI];
 
     if (discoverPeripheralCallbackId) {
