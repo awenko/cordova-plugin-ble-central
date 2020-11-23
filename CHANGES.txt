@@ -1,3 +1,29 @@
+= 1.3.1 =
+Android updated to BluetoothLeScanner removing deprecated LeScanCallback #796 Thanks pentabarf
+Android updated to work with android-cordova@8 and android-cordova@9 #819
+iOS has new plugin variable IOS_INIT_ON_LOAD to delay plugin initialization. Defaults to false. #739 #769 Thanks josoete
+
+= 1.3.0 =
+Add new location permssions Android 10 (API29) #771 Thanks tiagoblackcode, subratpalhar92, & QuentinFarizon
+
+= 1.2.5 =
+Add setPin method for Android #718 Thanks untilbit
+Give the user feedback after an MTU size request #715 Thanks agren
+Add requestConnectionPriority for Android #714 #713 Thanks agren vamshik113 
+
+= 1.2.4 =
+Add sequence numbers to notifications on Android to handle out of order notifications. Android #625 #656 Thanks timburke
+Location services is now a warning on Android. Add isLocationEnabled() #607 #633 Thanks doug-a-brunner
+Use printf of cordova for LOG, reuse pattern, improve loop #647 Thanks ChristianLutz
+Add queueCleanup method to API #695 Thanks untilbit
+Fix null pointer in onLeScan #500 Thanks fjms
+Remove cordova-plugin-compat #705 #617
+
+= 1.2.3 =
+Fix iOS crash when advertising data contains kCBAdvDataLeBluetoothDeviceAddress #685 #697 Thanks jospete
+Fix problem with multiple devices and notifications when one device disconnected #674 Thanks mandrade-digmap
+Add NSBluetoothAlwaysUsageDescription for iOS13 #704 #700 Thanks favnec5
+
 = 1.2.2 =
 Remove lambda from Peripheral.java to maintain 1.6 source compatibility #602
 Remove showBluetoothSettings for iOS #603
