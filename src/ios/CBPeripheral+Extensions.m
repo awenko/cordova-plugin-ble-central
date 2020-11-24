@@ -103,7 +103,6 @@ static NSDictionary *dataToArrayBuffer(NSData* data) {
 //};
 - (NSDictionary *) serializableAdvertisementData: (NSDictionary *) advertisementData {
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
-    NSMutableDictionary *result = [[NSMutableDictionary alloc] init];
 
     NSString *localName = [advertisementData objectForKey:CBAdvertisementDataLocalNameKey];
     if (localName) {
